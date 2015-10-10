@@ -73,3 +73,4 @@ The inflector helpers work with both positional and keyword arguments. For the s
 - ```{{dasherize string}}```
 - ```{{titleize string}}```
 - ```{{ordinalize string}}```
+

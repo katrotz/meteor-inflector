@@ -16,6 +16,8 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
+  api.versonsFrom("METEOR@0.9.0");
+
   api.use('templating', 'client');
   api.use('katrotz:inflector');
   api.use('tinytest');
