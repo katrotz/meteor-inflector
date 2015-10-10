@@ -9,7 +9,7 @@ This is a meteor package wrapping the [NodeJS inflection](https://github.com/dre
 
 ## How to use
 
-### Server and Client
+#### Server and Client
 This package exports the `Inflector` object that can be accessed from the global scope which exposes all the inflection methods from nodes package:
 
 	Inflector.indexOf(arr, item, fromIndex, compareFunc)
