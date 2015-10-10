@@ -7,6 +7,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom('METEOR@0.9.0');
+
   api.use(['templating'], 'client');
 
   api.addFiles(['./.npm/package/node_modules/inflection/lib/inflection.js'], 'client');
@@ -16,8 +18,6 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.versionsFrom("METEOR@0.9.0");
-
   api.use('templating', 'client');
   api.use('katrotz:inflector');
   api.use('tinytest');
