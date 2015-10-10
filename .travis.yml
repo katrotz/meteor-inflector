@@ -14,21 +14,14 @@ node_js:
   - 4.1
 env:
   global:
-    - DISPLAY=:99.0
     - PATH="$HOME/.meteor:$PATH"
 before_install:
-  - "sh -e /etc/init.d/xvfb start"
   - "curl https://install.meteor.com | /bin/sh"
-  - "npm i -g npm@^2.0.0"
-  - "npm i -g velocity-cli"
-before_script:
-  - npm prune
+  - "npm install -g spacejam"
 script:
-  - npm run test:ci
-after_success:
-  - npm run semantic-release
+  - spacejam test-packages ./
 branches:
-  except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"
+  only:
+    - "master"
 services:
   - mongodb
