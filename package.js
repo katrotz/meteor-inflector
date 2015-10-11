@@ -2,7 +2,7 @@ Package.describe({
   name: 'katrotz:inflector',
   version: '0.0.1',
   summary: 'Ruby on Rails > NodeJS > Meteor port of inflection',
-  git: 'git@github.com:katrotz/meteor-inflector.git',
+  git: 'https://github.com/katrotz/meteor-inflector.git',
   documentation: 'README.md',
 });
 
