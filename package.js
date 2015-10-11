@@ -1,6 +1,6 @@
 Package.describe({
   name: 'katrotz:inflector',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Ruby on Rails > NodeJS > Meteor port of inflection',
   git: 'https://github.com/katrotz/meteor-inflector.git',
   documentation: 'README.md',
